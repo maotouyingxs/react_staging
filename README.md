@@ -1,5 +1,6 @@
 # react_staging
-## 一、 todoList 案例相关知识
+## 一、 [脚手架安装](/文档/1_脚手架安装.md)
+## 二、 todoList 案例相关知识
    1. 拆分组件、实现静态组件，注意：className、style 的写法
    2. 动态初始化列表，如何确定将数据放在哪个组件的 state 中？
       - 某个组件使用：放在其自身的 state 中
