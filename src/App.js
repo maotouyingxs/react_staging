@@ -1,8 +1,9 @@
 // 创建外壳组件
 import React, { Component } from 'react'
 import { Link, BrowserRouter, Route } from 'react-router-dom'
-import Home from './components/Home'
-import About from './components/About'
+import Home from './pages/Home'  // Home 是路由组件
+import About from './pages/About'  // About 是路由组件
+import Header from './components/Header' // Header 是一般组件
 
 // 创建并暴露 App 组件
 export default class App extends Component {
@@ -11,9 +12,7 @@ export default class App extends Component {
             <div>
                 <BrowserRouter></BrowserRouter>
                 <div className="row">
-                    <div className="col-xs-offset-2 col-xs-8">
-                        <div className="page-header"><h2>React Router Demo</h2></div>
-                    </div>
+                    <Header />
                 </div>
                 <div className="row">
                     <div className="col-xs-2 col-xs-offset-2">
