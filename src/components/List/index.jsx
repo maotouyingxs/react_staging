@@ -30,7 +30,7 @@ export default class List extends Component {
                         isLoading ? <h2>Loading...</h2> :
                             err ? <h2 style={{ color: 'red' }}>{err}</h2> :
                                 users.map((userObj) => {
-                                    return <Item user={userObj} />
+                                    return <Item key={userObj.id} user={userObj} />
                                 })
                 }
             </div>
