@@ -11,3 +11,4 @@
    4.注意 defaultChecked 和 checked 的区别，类似的还有：defaultValue 和 value
    5. 状态在哪里，操作状态的方法就在哪里
 ## 三、 [脚手架配置代理](/docs/2_react脚手架配置代理.md)
+## 四、 [搜索案例相关知识](/docs/3_github搜索案例相关知识.md)
