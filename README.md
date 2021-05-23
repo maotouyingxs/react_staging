@@ -134,3 +134,13 @@
 1. 默认使用的时模糊匹配（简单记：【输入的路径】必须包含要【匹配的路径】，且顺序要一致）
 2. 开启严格匹配：`<Route exact={true} path='/about' component={About} />`
 3. 严格匹配不要随便开启，需要再开，有些时候开启会导致无法继续匹配二级路由
+## 十一、 Redirect 的使用
+1. 一般写在所有路由注册的最下方，当所有路由都无法匹配时，跳转到 Readirect 指定的路由
+2. 具体编码：
+   ```javascript
+    <Switch>
+      <Route path='/about' component={About} />
+      <Route path='/home' component={Home} />
+      <Redirect to='/about'/>
+    </Switch>
+   ```

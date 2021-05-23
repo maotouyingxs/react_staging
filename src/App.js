@@ -1,6 +1,6 @@
 // 创建外壳组件
 import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Home from './pages/Home'  // Home 是路由组件
 import About from './pages/About'  // About 是路由组件
 import Header from './components/Header' // Header 是一般组件
@@ -32,6 +32,7 @@ export default class App extends Component {
                                 <Switch>
                                     <Route path='/about' component={About} />
                                     <Route path='/home' component={Home} />
+                                    <Redirect to='/about'/>
                                 </Switch>
                             </div>
                         </div>
