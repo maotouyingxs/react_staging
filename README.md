@@ -14,3 +14,4 @@
 ## 四、 [搜索案例相关知识](/docs/3_github搜索案例相关知识.md)
 ## 五、 [路由的基本使用](/docs/4_路由的基本使用.md)
 ## 六、 [路由组件与一般组件](/docs/5_路由组件与一般组件.md)
+## 七、 [NavLink 与封装 NavLink](/docs/6_NavLink与封装NavLink.md)
