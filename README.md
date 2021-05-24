@@ -152,3 +152,13 @@
    - 路由链接（携带参数）：`<Link to='/demo/test/tom/18'>详情</Link>`
    - 注册路由（声明接收）：`<Route path='/demo/test/:name/:age' component={Test} />`
    - 接收参数：`const {name,age} = this.props.match.params`
+2. **search 参数**
+   - 路由链接（携带参数）：`<Link to='/demo/test?name=tom&age=18'>详情</Link>`
+   - 注册路由（无需声明，正常注册即可）：`<Route path='/demo/test' component={Test} />`
+   - 接收参数：`const {search} = this.props.location`
+   - 备注：获取到的 search 是 urlencoded 编码字符串，需要借助 querystring 解析
+3. **state 参数**
+   - 路由链接（携带参数）：`<Link to={{path:'/demo/test',state:{name:'tom},age:18}}>详情</Link>`
+   - 注册路由（无需声明，正常注册即可）：`<Route path='/demo/test' component={Test} />`
+   - 接收参数：`const {name,age} = this.props.location.state`
+   - 备注：刷新也可以保留着参数
