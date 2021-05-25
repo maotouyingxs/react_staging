@@ -162,3 +162,7 @@
    - 注册路由（无需声明，正常注册即可）：`<Route path='/demo/test' component={Test} />`
    - 接收参数：`const {name,age} = this.props.location.state`
    - 备注：刷新也可以保留着参数
+## 十四、 withRouter的使用
+1. withRouter 可以加工一般组件，让一般组件具备路由组件所特有的API
+2. withRouter 是一个新组件
+`export default withRouter(Hearder)`
